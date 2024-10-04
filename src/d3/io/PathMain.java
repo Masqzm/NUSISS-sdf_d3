@@ -4,7 +4,7 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Main {
+public class PathMain {
     public static void main(String[] args) {
         // Ref to file
         Path p = Paths.get("catinthehat.txt");
