@@ -1,4 +1,4 @@
-package game;
+package d3.game;
 
 public interface Damageable {
     public int getHp();

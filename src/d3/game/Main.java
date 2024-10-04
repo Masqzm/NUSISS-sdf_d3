@@ -1,4 +1,4 @@
-package game;
+package d3.game;
 
 public class Main {
     public static void main(String[] args) {

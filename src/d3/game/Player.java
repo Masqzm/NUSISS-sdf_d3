@@ -1,4 +1,4 @@
-package game;
+package d3.game;
 
 public class Player {
     // public void hit(Monster m) {

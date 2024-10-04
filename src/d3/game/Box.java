@@ -1,4 +1,4 @@
-package game;
+package d3.game;
 
 public class Box implements Damageable {
     private int integrity = 5;

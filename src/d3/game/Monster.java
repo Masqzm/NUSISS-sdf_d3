@@ -1,4 +1,4 @@
-package game;
+package d3.game;
 
 public class Monster implements Damageable {
     private String name;
