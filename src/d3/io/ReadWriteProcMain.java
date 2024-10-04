@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 
-public class ReadWriteCapsMain {
+public class ReadWriteProcMain {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         String inFile = args[0];        // to ask: why not use File inFile = new File(args[0]);
         String outFile = args[1];
@@ -28,8 +28,12 @@ public class ReadWriteCapsMain {
         while((line = br.readLine()) != null)       // read line if it exists in input file
         {
             System.out.println(line);
-            bw.write(line.toUpperCase() + "\n");    // write line to out file after manipulation
-            
+
+            // Process line
+            String toRemove = "\\p{Punct}"; // matches any char in: !”#$%&'()*+,-./:;<=>?@[\]^_`{|}~:
+            String processed = (line.toUpperCase() + "\n").replaceAll(toRemove, "");
+
+            bw.write(processed);    // write line to out file after manipulation
         }
 
         // Close files
